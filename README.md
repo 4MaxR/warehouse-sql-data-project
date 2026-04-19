@@ -70,22 +70,22 @@ The final layer where data is consumed by end-users and applications.
 └── README.md
 ```
 
-🚀 Getting Started
-Prerequisites
-SQL Server instance installed and running.
-Access to the source CSV files (CRM/ERP exports).
-Installation
-Clone the repository.
-Run the scripts in the /ddl folder to set up the database schemas.
-Execute the table creation scripts in /bronze, /silver, and /gold in order.
-Configure the connection strings for the source file locations.
-Execute the ETL stored procedures to populate the warehouse.
+🚀## Getting Started
+### Prerequisites
+- SQL Server instance installed and running.
+- Access to the source CSV files (CRM/ERP exports).
+### Installation
+1. Clone the repository.
+2. Run the scripts in the /ddl folder to set up the database schemas.
+3. Execute the table creation scripts in /bronze, /silver, and /gold in order.
+4. Configure the connection strings for the source file locations.
+5. Execute the ETL stored procedures to populate the warehouse.
 
-📝 Naming Conventions
+📝 ## Naming Conventions
 This project adheres to strict naming conventions to ensure maintainability:
-Style: snake_case (lowercase with underscores).
-Language: English.
-Bronze/Silver Tables: <sourcesystem>_<entity> (e.g., crm_customer_info).
-Gold Tables: <category>_<entity> (e.g., dim_customer, fact_sales).
-Keys: Surrogate keys use the suffix _key (e.g., customer_key).
-Technical Columns: Prefixed with dwh_ (e.g., dwh_load_date).
+- Style: snake_case (lowercase with underscores).
+- Language: English.
+- Bronze/Silver Tables: <sourcesystem>_<entity> (e.g., crm_customer_info).
+- Gold Tables: <category>_<entity> (e.g., dim_customer, fact_sales).
+- Keys: Surrogate keys use the suffix _key (e.g., customer_key).
+- Technical Columns: Prefixed with dwh_ (e.g., dwh_load_date).
