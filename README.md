@@ -70,7 +70,7 @@ The final layer where data is consumed by end-users and applications.
 └── README.md
 ```
 
-🚀 ## Getting Started
+## Getting Started 🚀
 ### Prerequisites
 - SQL Server instance installed and running.
 - Access to the source CSV files (CRM/ERP exports).
@@ -81,7 +81,7 @@ The final layer where data is consumed by end-users and applications.
 4. Configure the connection strings for the source file locations.
 5. Execute the ETL stored procedures to populate the warehouse.
 
-📝 ## Naming Conventions
+## Naming Conventions 📝
 
 This project adheres to strict naming conventions to ensure maintainability:
 - Style: snake_case (lowercase with underscores).
