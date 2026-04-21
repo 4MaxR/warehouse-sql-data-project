@@ -4,9 +4,14 @@ A production-grade data warehouse built on **Microsoft SQL Server**, implementin
 
 ---
 
+<div align="center">
+  <img src="docs/Questions_Analyze.drawio.svg" alt="Data Warehouse Architecture" />
+</div>
+
 ## 📌 Project Overview
 
 This project demonstrates an end-to-end data engineering pipeline — from raw source ingestion all the way to a Star Schema reporting layer — using only **T-SQL**, with no external orchestration tools.
+
 
 | Layer | Role | Output |
 |---|---|---|
@@ -15,6 +20,9 @@ This project demonstrates an end-to-end data engineering pipeline — from raw s
 | **Gold** | Business-ready, analytics-optimized | Star Schema Views (Dimensions + Fact) |
 
 ---
+<div align="center">
+  <img src="docs/Dataset_layers_Diagram.drawio.svg" alt="Dataset layers Diagram" />
+</div>
 
 ## 🗂️ Repository Structure
 
@@ -68,6 +76,10 @@ data_warehouse_project/
 
 ## 🏗️ Architecture
 
+<div align="center">
+  <img src="docs/architecture_WH.drawio.svg" alt="Data Warehouse Architecture" />
+</div>
+
 ### Medallion Layers
 
 ```
@@ -103,6 +115,9 @@ fact_sales ────┤
                │
          dim_products
 ```
+<div align="center">
+  <img src="docs/data_flow.drawio.svg" alt="Data Warehouse Architecture" />
+</div>
 
 ---
 
@@ -149,10 +164,13 @@ END AS gender
 ```sql
 ROW_NUMBER() OVER (ORDER BY cst_id) AS customer_key
 ```
+<div align="center">
+  <img src="docs/Keys Diagram.drawio.svg" alt="Data Warehouse Architecture" />
+</div>
 
 ---
 
-## 📊 Gold Layer — Data Catalog
+## 📊 Gold Layer — [Data Catalog](docs/data_catalog.md)
 
 ### `gold.dim_customers`
 Conformed customer dimension enriched from both CRM and ERP.
