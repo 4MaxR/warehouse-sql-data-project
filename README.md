@@ -307,11 +307,11 @@ EXEC silver.load_silver;
 
 ## 👤 Author
 
-**Author:** Al Rouby
-**Specialization:** Data Engineering | SQL Server | ETL & Data Modeling
-**Credits:** Inspired by [Mr.Baraa's Channel](https://www.youtube.com/@DataWithBaraa)
+**Author:** Al Rouby.
+**Specialization:** Data Engineering | SQL Server | ETL & Data Modeling.
+**Credits:** Inspired by [Mr.Baraa's Channel](https://www.youtube.com/@DataWithBaraa).
 Connect with me:
-[LinkedIn](www.linkedin.com/in/mustafa-al-rouby-20218b171) | [EMAIL](mustafa.elrouby1@gmail.com) | [GitHub](https://github.com](https://github.com/4MaxR)
+[LinkedIn](www.linkedin.com/in/mustafa-al-rouby-20218b171) | [EMAIL](mustafa.elrouby1@gmail.com) | [GitHub](https://github.com/4MaxR).
 ---
 
 *Built as a portfolio project demonstrating end-to-end data warehouse design and implementation using T-SQL.*
