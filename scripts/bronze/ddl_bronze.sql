@@ -12,8 +12,7 @@ IF OBJECT_ID('bronze.crm_cust_info', 'U') IS NOT NULL
 	DROP TABLE bronze.crm_cust_info; 
 	We can use it if SQL Server version is less than 2016, otherwise we can use DROP TABLE IF EXISTS statement to drop the table if it exists.
 */
-DROP TABLE IF EXISTS bronze.crm_cust_info;
-CREATE TABLE bronze.crm_cust_info (
+CREATE TABLE IF NOT EXISTS bronze.crm_cust_info (
 	cst_id INT,
 	cst_key NVARCHAR(50),
 	cst_firstname NVARCHAR(50),
@@ -23,8 +22,7 @@ CREATE TABLE bronze.crm_cust_info (
 	cst_create_date DATE
 );
 
-DROP TABLE IF EXISTS bronze.crm_prd_info;
-CREATE TABLE bronze.crm_prd_info (
+CREATE TABLE IF NOT EXISTS bronze.crm_prd_info (
 	prd_id INT,
 	prd_key NVARCHAR(50),
 	prd_nm NVARCHAR(50),
@@ -34,8 +32,7 @@ CREATE TABLE bronze.crm_prd_info (
 	prd_end_dt DATETIME
 );
 
-DROP TABLE IF EXISTS bronze.crm_sales_details;
-CREATE TABLE bronze.crm_sales_details (
+CREATE TABLE IF NOT EXISTS bronze.crm_sales_details (
 	sls_ord_num NVARCHAR(50),
 	sls_prd_key NVARCHAR(50),
 	sls_cust_id INT,
@@ -47,21 +44,18 @@ CREATE TABLE bronze.crm_sales_details (
 	sls_price INT
 );
 
-DROP TABLE IF EXISTS bronze.erp_loc_a101;
-CREATE TABLE bronze.erp_loc_a101 (
+CREATE TABLE IF NOT EXISTS bronze.erp_loc_a101 (
 	cid NVARCHAR(50),
 	cntry NVARCHAR(50)
 );
 
-DROP TABLE IF EXISTS bronze.erp_cust_az12;
-CREATE TABLE bronze.erp_cust_az12 (
+CREATE TABLE IF NOT EXISTS bronze.erp_cust_az12 (
 	cid NVARCHAR(50),
 	bdate DATE,
 	gen NVARCHAR(50)
 );
 
-DROP TABLE IF EXISTS bronze.erp_px_cat_g1v2;
-CREATE TABLE bronze.erp_px_cat_g1v2 (
+CREATE TABLE IF NOT EXISTS bronze.erp_px_cat_g1v2 (
 	id NVARCHAR(50),
 	cat NVARCHAR(50),
 	subcate NVARCHAR(50),
